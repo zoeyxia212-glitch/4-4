@@ -1,4 +1,5 @@
 <script>
+  // 接收自定义加载文字
   let { text = "Loading..." } = $props();
 </script>
 
@@ -16,7 +17,6 @@
     gap: 1rem;
     padding: 4rem 0;
   }
-
   .loading-spinner {
     width: 40px;
     height: 40px;
@@ -25,18 +25,8 @@
     border-radius: 50%;
     animation: spin 1s linear infinite;
   }
-
   @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  .loading p {
-    color: #666;
-    font-size: 1.1rem;
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
 </style>
